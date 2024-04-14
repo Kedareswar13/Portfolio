@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    background-image: url(background.webp);
+    background-color: #003737;
+    background-repeat: repeat-y;
+    background-size: cover;
+    backdrop-filter: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(49, 127, 49);
+}
+.home:hover{
+    text-shadow: 0 0 10px #50df4b
+}
+#navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.022);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    transition: top 0.3s;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 4rem;
+
+}
+
+nav .left {
+    font-size: 2rem;
+    margin-right: 15vw;
+}
+
+nav .right {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+nav .right a {
+    margin: 0 20px;
+}
+.text{
+    text-shadow: 0 0 10px #4bc6df
+}
+.first {
+    display: flex;
+    justify-content: space-around;
+    margin: 4% 0;
+    height: 350px;
+}
+
+.first .leftsection {
+    width: 50%;
+    font-size: xx-large;
+    padding-top: 100px;
+}
+
+.first .rightsection {
+    margin-top: 6vw;
+    width: 30%;
+    height: 80vh;
+}
+
+.img1 {
+    margin: 0;
+    width: 80%;
+    height: 90%;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.first .rightsection img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link a {
+    margin: 2vw 2vw;
+    font-size: 4vw;
+}
+
+.color {
+    color: red;
+}
+
+.second {
+    display: flex;
+    margin: 10vw 5vw;
+    justify-content: space-around;
+}
+
+.second h2 {
+    margin-top: 3vw;
+    font-size: 3rem;
+}
+
+.second p {
+    font-size: 1rem;
+}
+
+.second .leftsection {
+    margin-top: 7vw;
+    width: 50%;
+}
+
+.second .img2 {
+    width: 60%;
+    margin-left: 2vw;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.second .img2 img {
+    width: 100%;
+}
+
+.second .rightsection {
+    margin-top: 5vw;
+    width: 60%;
+}
+
+.third {
+    margin: 5vw 5vw;
+    width: 90%;
+}
+
+.third .container {
+    display: flex;
+}
+
+.third ul {
+    width: min-content;
+}
+
+.third h2 {
+    margin-top: 3vw;
+    font-size: 3rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+}
+
+.third h3 {
+    margin-left: 5rem;
+    font-size: 2rem;
+}
+
+.third li {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.third .leftsection i {
+    font-size: 3rem;
+    margin-left: 5rem;
+    width: 5%;
+}
+
+.third .leftsection {
+    margin-top: 0rem;
+    width: 20%;
+}
+
+.third img {
+    width: 3rem;
+    padding: 0%;
+}
+
+.third .white {
+    background-color: white;
+    width: min-content;
+    padding: 0%;
+    border-radius: 2px;
+    margin-left: 5rem;
+}
+
+#html,
+#css {
+    margin-left: 0.4rem;
+}
+
+.third .rightsection {
+    display: flex;
+}
+
+.third .rightsection li {
+    margin: 0 1rem;
+}
+
+.third .rightsection .a {
+    margin: 2rem 0;
+}
+
+#sk {
+    margin-top: 0;
+}
+
+.html,
+.css,
+.js {
+    display: inline-flex;
+}
+
+.cpp {
+    margin-top: 1rem
+}
+
+.js {
+    margin-top: 1rem;
+}
+
+.progress-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-left: 15rem;
+}
+
+.progress-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.progress-circle {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    margin-right: 5rem;
+    margin-bottom: 2rem;
+}
+
+.progress-circle:last-child {
+    margin-right: 0;
+}
+
+.progress-circle svg {
+    width: 100%;
+    height: 100%;
+}
+
+.progress-circle circle {
+    fill: none;
+    stroke: #f2f2f2;
+    /* Background color */
+    stroke-width: 10;
+    /* Adjust the thickness of the circle */
+}
+
+.progress-circle .progress {
+    fill: none;
+    stroke: #4caf50;
+    /* Progress color */
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    transition: stroke-dashoffset 0.5s ease-in-out;
+}
+
+.progress-text {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    text-anchor: middle;
+    dominant-baseline: central;
+    fill: white;
+    /* Text color */
+}
+
+.progress-title {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: white;
+    margin-top: 5px;
+}
+
+.fourth {
+    display: flex;
+    margin: 5vw 5vw;
+    width: 95%;
+}
+
+.fourth h2 {
+    margin-top: 3vw;
+    font-size: 3rem;
+}
+
+.fourth .leftsection {
+    width: 100%;
+    font-size: 1rem;
+    margin-right: 2rem;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2VW;
+}
+.fifth {
+    margin:10vw 4vw;
+    background-color: transparent;
+    width: 90%;
+    height: max-content;
+}
+
+.container {
+    width: 90vw;
+}
+
+.form-container {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    padding: 20px;
+    width: 100%;
+    display: inline-block;
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+.container h2{
+    font-size: xx-large;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"]
+ {
+    width:100%; 
+    padding: 0.8vw;
+    margin-bottom:1vw;
+    margin-top: 0.5vw;
+    border-radius: 5px;
+    border: none;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); 
+}
+.contact-form textarea {
+    width: 100%; 
+    padding: 10px;
+    margin-top: 0.5vw;
+    margin-bottom:2vw;
+    border-radius: 5px;
+    border: none;
+    background-color: transparent; 
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); 
+    height: 100px; 
+}
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #d60000;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: red;
+    
+}
+
+.color {
+    color: red;
+}
+footer {
+    background-color:black;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    margin-top: 10px;
+    font-size:x-large;
+}
+
+.footer-links a {
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+}
